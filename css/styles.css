@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Nunito:wght@200;300;400;500;700&display=swap');
+@font-face{
+    font-family: 'Montserrat';
+    src: url("../assets/font/Montserrat-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Alkatra', cursive;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*navegacion*/
+
+.header{
+    background-color: rgb(53,58,64);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:1rem 5rem;
+    height: 15vh;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.listaNav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.linkNav{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.contenedorLogo{
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedorLogo a{
+    display: inline-block;
+    width: 40%;
+}
+.contenedorLogo img{
+    width: 100%;
+    object-fit: cover;
+}
+.contenedorLogo h2{
+    color: white;
+}
+
+.linkNav.ticket{
+    color: green;
+}
+.linkNav:hover{
+    text-decoration: underline;
+}
+
+/*en todos*/
+.boton{
+    border-radius: 4px;
+    border: #fff solid 1px ;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+
+.containerTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/*section conferencia*/
+
+.conferencia{
+    height: 70vh;
+    background:linear-gradient(to bottom,#00000026, #000000c2,#00000026), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.contenedorTextConf{
+     width:40%;
+     color:white;
+     text-align: right;
+}
+
+.contenedorTextConf h1{
+    margin-bottom: 1rem;
+}
+.contenedorTextConf p{
+    margin-bottom: 1rem;
+}
+.contenedorTextConf .boton{
+    margin-left: 0.5rem;
+}
+.contenedorTextConf .contenedorBotones{
+    display: flex;
+    justify-content: end;
+    
+}
+.boton.ticket{
+    background-color: green;
+    border: none;
+}
+
+
+/*section oradores*/
+
+.oradores{
+    padding-top: 2rem;
+}
+
+.padreCards{
+    width: 90%;
+    margin: 0 auto;
+   
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 90vh;
+    column-gap: 4%;
+}
+.card{
+    border: 1px solid #E2E2E3;
+    width:  350px;
+    height: 85%;
+    border-radius: 4px;
+}
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 4px 4px 0px 0px;
+   
+}
+.cardBody{
+    border-radius: 4%;
+  
+    height:39%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px 1rem;
+}
+.cardTags{
+    display:flex;
+   
+}
+.cardTags h4{
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+
+}
+
+.tituloCardBody.react{
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+.tituloCardBody.javascript{
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+.tituloCardBody.negocios{
+    background-color: rgb(94, 96, 97);
+    color: white;
+}
+.tituloCardBody.startups{
+    background-color: rgb(209, 40, 28);
+    color: white;
+}
+
+/*section lugarYFecha*/
+
+.lugarYFecha{
+    display:flex;
+    align-items: stretch;
+    height: 60vh;
+    background-color:rgb(41, 41, 41);
+    color:white;
+   
+}
+.left{
+    width: 50%;
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right{
+    width:50%;
+    border-left: 1px solid white;
+    padding: 2%;
+}
+
+.right h2{
+    margin-bottom: 1rem;
+}
+.right p{
+    margin-bottom: 1rem;
+    line-height:1.7;
+}
+
+/*section convierteteEnOrador*/
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formularioOrador{
+    width:50%;
+    height: 42vh;
+    margin:2rem auto;
+   
+    text-align: center;
+}
+.containerInputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.inputNA{
+    width: 48%;
+
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    padding-left: 0.5rem;
+}
+
+
+.textArea{
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    /*padding-left: 0.5rem;*/
+}
+.formSubmit{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(57, 230, 57);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/*footer*/
+
+.footer{
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
+    height: 10vh;
+    
+}
+.contenedorFooter{
+    width:70%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedorFooter a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.wsp{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px;
+}
+
+
+/*0 - 600px  */
+@media screen and (max-width: 567px){
+    .header{
+        background-color: rgb(53,58,64);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+
+    }
+    .contenedorLogo{
+        width:70%;
+    }
+    .listaNav{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+    }
+    .conferencia{
+        height: 70%;
+        background:url("../assets/img/ba2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-right:initial;
+        align-items: center;
+        justify-content:center;
+    
+    }
+    .contenedorTextConf{
+        background:linear-gradient(to bottom, #000000c2, #000000c2);
+        width: 100%;
+        text-align: center;
+    }
+    .escritorio{
+        display:none;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+    .card{
+        margin-bottom: 0.5rem;
+    }
+    .formularioOrador{
+        height: initial;
+    }
+
+
+    .contenedorFooter{
+        
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .containerInputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .inputNA{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width:767px) {
+    .header{
+        /*background-color: rgb(113, 243, 43);*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+
+    }
+    .contenedorLogo{
+        width:70%;
+    }
+    .navegacion{
+        width: 100%;
+    }
+    .listaNav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .linkNav{
+        font-size: 1rem;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+    .header{
+        /*background-color: rgb(43, 190, 243);*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+
+    }
+    .contenedorLogo{
+        width:50%;
+    }
+    .navegacion{
+        width: 100%;
+    }
+    .listaNav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .linkNav{
+        font-size: 1.2rem;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1299px) {
+    .header{
+        padding:1rem 1rem;
+    }
+    .contenedorLogo{
+        width:30%;
+    }
+    .navegacion{
+        margin-left:20px;
+        width: 65%;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+}
+
